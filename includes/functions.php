@@ -63,11 +63,11 @@
 
     function duplicateCheck($sum1, $sum2, $sum3, $sum4){
         $results_array = array();
-        array_push($results_array, abs(42 - $sum1), abs(42 - $sum2), abs(42 - $sum3), abs(42 - $sum4));
+        array_push($results_array, $sum1, $sum2, $sum3, $sum4);
 
-        for($i = 0; $i < 4; $i++){
-            for($j = 0; $j < 4; $j++)
-                if($i != $j && $results_array[$i] == $results_array[$j])
+        for($i = 0; $i < 3; $i++){
+            for($j = $i + 1; $j < 4; $j++)
+                if($results_array[$i] == $results_array[$j])
                 {
                 return true;
             }

@@ -42,26 +42,25 @@
 
                         echo "<tr><td><img src='img/cards/diamonds/$array_one[0].png'></td>
                   
-                        <td><img src='img/cards/".randomSuit()."/$array_one[1].png'></td>
-                        <td><img src='img/cards/".randomSuit()."/$array_one[2].png'></td> 
-                        <td><img src='img/cards/".randomSuit()."/$array_one[3].png'></td>
-                        <td><img src='img/cards/".randomSuit()."/$array_one[4].png'></td>";
+                        <td><img src='img/cards/".randomSuit()."/$array_two[1].png'></td>
+                        <td><img src='img/cards/".randomSuit()."/$array_two[2].png'></td> 
+                        <td><img src='img/cards/".randomSuit()."/$array_two[3].png'></td>
+                        <td><img src='img/cards/".randomSuit()."/$array_two[4].png'></td>";
                         
-                        echo "<tr><td><img src='img/cards/diamonds/$array_one[0].png'></td>
+                        echo "<tr><td><img src='img/cards/diamonds/$array_three[0].png'></td>
                     
-                        <td><img src='img/cards/".randomSuit()."/$array_one[1].png'></td>
-                        <td><img src='img/cards/".randomSuit()."/$array_one[2].png'></td> 
-                        <td><img src='img/cards/".randomSuit()."/$array_one[3].png'></td>
-                        <td><img src='img/cards/".randomSuit()."/$array_one[4].png'></td>";
+                        <td><img src='img/cards/".randomSuit()."/$array_three[1].png'></td>
+                        <td><img src='img/cards/".randomSuit()."/$array_three[2].png'></td> 
+                        <td><img src='img/cards/".randomSuit()."/$array_three[3].png'></td>
+                        <td><img src='img/cards/".randomSuit()."/$array_three[4].png'></td>";
 
-                        echo "<tr><td><img src='img/cards/diamonds/$array_one[0].png'></td>
+                        echo "<tr><td><img src='img/cards/diamonds/$array_four[0].png'></td>
                         
-                        <td><img src='img/cards/".randomSuit()."/$array_one[1].png'></td>
-                        <td><img src='img/cards/".randomSuit()."/$array_one[2].png'></td> 
-                        <td><img src='img/cards/".randomSuit()."/$array_one[3].png'></td>
-                        <td><img src='img/cards/".randomSuit()."/$array_one[4].png'></td>";
+                        <td><img src='img/cards/".randomSuit()."/$array_four[1].png'></td>
+                        <td><img src='img/cards/".randomSuit()."/$array_four[2].png'></td> 
+                        <td><img src='img/cards/".randomSuit()."/$array_four[3].png'></td>
+                        <td><img src='img/cards/".randomSuit()."/$array_four[4].png'></td>";
 
-                            
                          
 
                     ?>

@@ -52,13 +52,40 @@
             if($results_array[$i] == $minValue)
                 $minIndex = $i;
         }
+        
+        if(duplicateCheck($sum1, $sum2, $sum3, $sum4) == true){
+            $minIndex = -1;
+        }
+        
+        
         return $minIndex;
     }
+
+    function duplicateCheck($sum1, $sum2, $sum3, $sum4){
+        $results_array = array();
+        array_push($results_array, abs(42 - $sum1), abs(42 - $sum2), abs(42 - $sum3), abs(42 - $sum4));
+        
+        $duplicates = false;
+        
+        for($i = 0; $i < 4; $i++){
+            for($j = 0; $j < 4; $j++)
+                
+                if($i != $j && $results_array[$i] == $results_array[$j])
+                {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
 
     function printWinner($minIndex){
         $winner = "";
         switch($minIndex)
             {
+            case -1: $winner = "Tie!";
+            break;
             case 0: $winner = "Alcides";
             break;
             case 1: $winner = "Edgar";
@@ -71,4 +98,5 @@
         
         return $winner;
     }
+    
 ?>

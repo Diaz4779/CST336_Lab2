@@ -32,10 +32,31 @@
                         $array_two = randomArray();
                         $array_three = randomArray();
                         $array_four = randomArray();
-                        echo "<tr><td>$array_one[0]</td><td>$array_one[1]</td><td>$array_one[2]</td><td>$array_one[3]</td><td>$array_one[4]</td>";
-                        echo "<tr><td>$array_two[0]</td><td>$array_two[1]</td><td>$array_two[2]</td><td>$array_two[3]</td><td>$array_two[4]</td>";
-                        echo "<tr><td>$array_three[0]</td><td>$array_three[1]</td><td>$array_three[2]</td><td>$array_three[3]</td><td>$array_three[4]</td>";
-                        echo "<tr><td>$array_four[0]</td><td>$array_four[1]</td><td>$array_four[2]</td><td>$array_four[3]</td><td>$array_four[4]</td>";
+                
+                        echo "<tr><td><img src='img/cards/diamonds/$array_one[0].png'></td>
+                     
+                        <td><img src='img/cards/".randomSuit()."/$array_one[1].png'></td>
+                        <td><img src='img/cards/".randomSuit()."/$array_one[2].png'></td> 
+                        <td><img src='img/cards/".randomSuit()."/$array_one[3].png'></td>";
+
+                        echo "<tr><td><img src='img/cards/diamonds/$array_one[0].png'></td>
+                  
+                        <td><img src='img/cards/".randomSuit()."/$array_one[1].png'></td>
+                        <td><img src='img/cards/".randomSuit()."/$array_one[2].png'></td> 
+                        <td><img src='img/cards/".randomSuit()."/$array_one[3].png'></td>";
+                        
+                        echo "<tr><td><img src='img/cards/diamonds/$array_one[0].png'></td>
+                    
+                        <td><img src='img/cards/".randomSuit()."/$array_one[1].png'></td>
+                        <td><img src='img/cards/".randomSuit()."/$array_one[2].png'></td> 
+                        <td><img src='img/cards/".randomSuit()."/$array_one[3].png'></td>";
+
+                        echo "<tr><td><img src='img/cards/diamonds/$array_one[0].png'></td>
+                        
+                        <td><img src='img/cards/".randomSuit()."/$array_one[1].png'></td>
+                        <td><img src='img/cards/".randomSuit()."/$array_one[2].png'></td> 
+                        <td><img src='img/cards/".randomSuit()."/$array_one[3].png'></td>";
+
                             
                          
 

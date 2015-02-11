@@ -11,8 +11,7 @@
             h1{
                 color: #c0c0c0;
                 text-align:center;
-                font-Size:45px;
-                padding-bottom: 5px;
+                font-Size:50px;
                 text-shadow: 4px 2px #474747;
             }
             body{
@@ -36,12 +35,22 @@
                 text-align: center;
             }
             #tableDiv{
-                margin:auto;
-                padding:75px;
+                margin: 0 auto;
+                width: 50%;
             }
             #titleFont{
                 font-Size: 2em;
                 color: #c0c0c0;    
+            }
+            table, tr, td {
+                font-Size: 25px;
+            }
+            a{
+                background:#baaa1a;
+                padding:10px;
+                text-decoration: none;
+                color: black;
+                border-radius:10px;
             }
         </style>
     </head>
@@ -52,7 +61,7 @@
             <div id="tableDiv">
                 
                <table>
-                   <tr><td style="color: #baaa1a">Opponents</td><th colspan = "5" style="color: #baaa1a">Hand</th>
+                   <tr><td style="color: #baaa1a"><strong>Opponents</strong></td><th colspan = "5" style="color: #baaa1a">Hand</th>
                    <th colspan = "5" style="color: #baaa1a">Score</th></tr>
                     <?php
                         $array_one = randomArray();
@@ -95,9 +104,11 @@
                         <td><img src='img/cards/".randomSuit()."/$array_four[3].png'></td>
                         <td><img src='img/cards/".randomSuit()."/$array_four[4].png'>
                         <td><span class=fontChange>  $sum4</span></td></td>";
-                        echo"<tr><td><h3>".printWinner(findGreater($sum1, $sum2, $sum3, $sum4))." Wins!</h3><tr><td>";
-                        
-                        echo"<tr><td><a href='index.php'>Play Again</a><tr><td>";                         
+
+
+                        echo"<tr><td><h3>".printWinner(findGreater($sum1, $sum2, $sum3, $sum4))."</h3><tr><td>";
+                        echo"<tr><td><a href='index.php'>Play Again</a><tr><td>";
+
                     ?>
                </table>
          </div> 

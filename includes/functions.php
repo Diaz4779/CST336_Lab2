@@ -83,11 +83,11 @@
             {
             case -1: $winner = "Tie!";
             break;
-            case 0: $winner = "Alcides Wins!";
+            case 0: $winner = "Rivka Wins!";
             break;
-            case 1: $winner = "Edgar Wins!";
+            case 1: $winner = "Daniel Wins!";
             break;
-            case 2: $winner = "Elias Wins!";
+            case 2: $winner = "Luis Wins!";
             break;
             case 3: $winner = "Thane Wins!";
             break;

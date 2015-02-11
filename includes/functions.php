@@ -5,6 +5,22 @@
         return $randomNum;
     }
 
+    function randomSuit(){
+        $randSuit = rand(1, 4);
+        $suit = "";
+        switch($randSuit){
+            case 1: $suit = "hearts";
+            break;
+            case 2: $suit = "clubs";
+            break;
+            case 3: $suit = "diamonds";
+            break;
+            case 4: $suit = "spades";
+            break;
+        }
+        return $suit;
+    }
+
     function randomArray(){
         $rand_array = array();
         
@@ -55,13 +71,4 @@
         
         return $winner;
     }
-
-    randomGenerator();
-    randomArray();
-    $new_array = randomArray();
-    print_r($new_array);
-    echo getSum($new_array);
-    echo printWinner(findGreater(41, 37, 26, 42));
-    
-    
 ?>

@@ -7,7 +7,6 @@
             <title>Lab 2: Silver Jack </title>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="css/styles.css"/>
-        
         <style type="text/css">
 
             h1{
@@ -25,7 +24,7 @@
     <body>
         <div id="wrapper">
              <h1>Silverjack</h1>
-            
+
         </div>
     </body>
 

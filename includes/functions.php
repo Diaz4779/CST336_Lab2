@@ -1,10 +1,8 @@
 <?php
-
     function randomGenerator(){
         $randomNum = rand(1, 13);
         return $randomNum;
     }
-
     function randomSuit(){
         $randSuit = rand(1, 4);
         $suit = "";
@@ -20,7 +18,6 @@
         }
         return $suit;
     }
-
     function randomArray(){
         $rand_array = array();
         
@@ -36,13 +33,11 @@
         
         return $rand_array;
     }
-
     function getSum($rand_array){
         $sum = array_sum($rand_array);
         
         return $sum;
     }
-
     function findGreater($sum1, $sum2, $sum3, $sum4){
         $results_array = array();
         array_push($results_array, abs(42 - $sum1), abs(42 - $sum2), abs(42 - $sum3), abs(42 - $sum4));
@@ -60,12 +55,9 @@
         
         return $minIndex;
     }
-
     function duplicateCheck($sum1, $sum2, $sum3, $sum4){
         $results_array = array();
-
         array_push($results_array, $sum1, $sum2, $sum3, $sum4);
-
         for($i = 0; $i < 3; $i++){
             for($j = $i + 1; $j < 4; $j++)
                 if($results_array[$i] == $results_array[$j])
@@ -76,19 +68,17 @@
         
         return false;
     }
-
-
     function printWinner($minIndex){
         $winner = "";
         switch($minIndex)
             {
             case -1: $winner = "Tie!";
             break;
-            case 0: $winner = "Alcides Wins!";
+            case 0: $winner = "Rivka Wins!";
             break;
-            case 1: $winner = "Edgar Wins!";
+            case 1: $winner = "Daniel Wins!";
             break;
-            case 2: $winner = "Elias Wins!";
+            case 2: $winner = "Luis Wins!";
             break;
             case 3: $winner = "Thane Wins!";
             break;

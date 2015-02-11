@@ -47,10 +47,30 @@
             }
             a{
                 background:#baaa1a;
-                padding:10px;
-                text-decoration: none;
                 color: black;
                 border-radius:10px;
+                text-decoration:none;
+                font-Size:25px;
+                padding:10px;
+            }
+            a:hover{
+                background:#000000;
+                color: #baaa1a;
+            }
+            #footer{
+                text-align:center;
+                background:#baaa1a;
+                border-radius:10px;
+                height:15px;
+                width:1000px;
+                padding:20px;
+                margin: 0 auto;
+                margin-bottom:25px;
+            }
+            #playAgain{
+                margin: 0 auto;
+                width: 50%;
+                padding-bottom:15px;
             }
         </style>
     </head>
@@ -75,14 +95,14 @@
        
         
                 
-                        echo "<tr><td><img src='img/al.png'/></td><td><img src='img/cards/diamonds/$array_one[0].png'></td>
+                        echo "<tr><td><img src='img/bec.png'/></td><td><img src='img/cards/diamonds/$array_one[0].png'></td>
                      
                         <td><img src='img/cards/".randomSuit()."/$array_one[1].png'></td>
                         <td><img src='img/cards/".randomSuit()."/$array_one[2].png'></td> 
                         <td><img src='img/cards/".randomSuit()."/$array_one[3].png'></td>
                         <td><img src='img/cards/".randomSuit()."/$array_one[4].png'>
                         <td><span class=fontChange>  $sum1</span></td></td>";
-                        echo "<tr><td><img src='img/ed.png'/></td><td><img src='img/cards/diamonds/$array_one[0].png'></td>
+                        echo "<tr><td><img src='img/dan.png'/></td><td><img src='img/cards/diamonds/$array_one[0].png'></td>
                   
                         <td><img src='img/cards/".randomSuit()."/$array_two[1].png'></td>
                         <td><img src='img/cards/".randomSuit()."/$array_two[2].png'></td> 
@@ -90,7 +110,7 @@
                         <td><img src='img/cards/".randomSuit()."/$array_two[4].png'>
                         <td><span class=fontChange>  $sum2</span></td></td>";
                         
-                        echo "<tr><td><img id='elias' src='img/el.png'/></td><td><img src='img/cards/diamonds/$array_one[0].png'></td>
+                        echo "<tr><td><img src='img/lui.png'/></td><td><img src='img/cards/diamonds/$array_one[0].png'></td>
                     
                         <td><img src='img/cards/".randomSuit()."/$array_three[1].png'></td>
                         <td><img src='img/cards/".randomSuit()."/$array_three[2].png'></td> 
@@ -104,15 +124,17 @@
                         <td><img src='img/cards/".randomSuit()."/$array_four[3].png'></td>
                         <td><img src='img/cards/".randomSuit()."/$array_four[4].png'>
                         <td><span class=fontChange>  $sum4</span></td></td>";
-
-
                         echo"<tr><td><h3>".printWinner(findGreater($sum1, $sum2, $sum3, $sum4))."</h3><tr><td>";
-                        echo"<tr><td><a href='index.php'>Play Again</a><tr><td>";
-
                     ?>
                </table>
+                <div id="playAgain">
+                    <a href="index.php">Play Again</a>
+                </div>
          </div> 
+     </div>
+        <div id="footer">
+            <footer>© All Rights reserved. Created by Luis Garcia, Daniel Diaz, and Rivka Garcia</footer>
         </div>
     </body>
 
-</HTML>
+</HTML>                   

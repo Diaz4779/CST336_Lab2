@@ -9,13 +9,14 @@
         <link rel="stylesheet" href="css/styles.css"/>
         <style type="text/css">
             h1{
-                color: #c0c0c0;
+                color: #ff5454;
                 text-align:center;
                 font-Size:50px;
                 text-shadow: 4px 2px #474747;
             }
             body{
                 background-image: url("img/CardDeck.jpg");
+                background-size: cover;
             }
             #elias{
                 width:45px;
@@ -40,13 +41,13 @@
             }
             #titleFont{
                 font-Size: 2em;
-                color: #c0c0c0;    
+                color: #8c8fcc;    
             }
             table, tr, td {
                 font-Size: 25px;
             }
             a{
-                background:#baaa1a;
+                background:#8c8fcc;
                 color: black;
                 border-radius:10px;
                 text-decoration:none;
@@ -54,12 +55,12 @@
                 padding:10px;
             }
             a:hover{
-                background:#000000;
-                color: #baaa1a;
+                background:#cecece;
+                color: #0e0e11;
             }
             #footer{
                 text-align:center;
-                background:#baaa1a;
+                background:#8c8fcc;
                 border-radius:10px;
                 height:15px;
                 width:1000px;
@@ -81,8 +82,8 @@
             <div id="tableDiv">
                 
                <table>
-                   <tr><td style="color: #baaa1a"><strong>Opponents</strong></td><th colspan = "5" style="color: #baaa1a">Hand</th>
-                   <th colspan = "5" style="color: #baaa1a">Score</th></tr>
+                   <tr><td style="color: #ff5454"><strong>Opponents</strong></td><th colspan = "5" style="color: #ff5454">Hand</th>
+                   <th colspan = "5" style="color: #ff5454">Score</th></tr>
                     <?php
                         $array_one = randomArray();
                         $array_two = randomArray();
@@ -133,7 +134,7 @@
          </div> 
      </div>
         <div id="footer">
-            <footer>© All Rights reserved. Created by Luis Garcia, Daniel Diaz, and Rivka Garcia</footer>
+            <footer>© All Rights reserved. Created by Luis Garcia, Daniel Diaz, David Garcia, and Rivka Garcia</footer>
         </div>
     </body>
 
